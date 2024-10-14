@@ -1,9 +1,6 @@
-Here's a sample `README.md` file you can use for your GitHub repository
-on "Stock Prediction Using Tweets." It is structured to provide clarity
-on the project's purpose, setup instructions, usage, and contribution
-guidelines.
+Here’s a sample `README.md` file you can use for your GitHub repository on "Stock Prediction Using Tweets." It is structured to provide clarity on the project’s purpose, setup instructions, usage, and contribution guidelines.
 
-``` markdown
+```markdown
 # Stock Prediction Using Tweets
 
 This project is focused on predicting stock prices by analyzing public sentiment from Twitter data. By leveraging natural language processing techniques and stock price data, the model predicts potential stock price movements based on the sentiment of tweets related to particular stocks.
@@ -65,86 +62,76 @@ Follow these steps to get the project up and running locally:
    ```bash
    git clone https://github.com/charankasanagottu/StockPredictionUsingTweets.git
    cd StockPredictionUsingTweets
-```
+   ```
 
-2.  Install required dependencies:
+2. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    ``` bash
-    pip install -r requirements.txt
-    ```
+3. Set up Twitter API credentials:
+   - Create a `.env` file in the root directory.
+   - Add your Twitter API keys and tokens:
+     ```
+     TWITTER_API_KEY=your_api_key
+     TWITTER_API_SECRET_KEY=your_secret_key
+     TWITTER_ACCESS_TOKEN=your_access_token
+     TWITTER_ACCESS_TOKEN_SECRET=your_access_token_secret
+     ```
 
-3.  Set up Twitter API credentials:
-
-    -   Create a `.env` file in the root directory.
-
-    -   Add your Twitter API keys and tokens:
-
-            TWITTER_API_KEY=your_api_key
-            TWITTER_API_SECRET_KEY=your_secret_key
-            TWITTER_ACCESS_TOKEN=your_access_token
-            TWITTER_ACCESS_TOKEN_SECRET=your_access_token_secret
-
-4.  Set up Yahoo Finance API:
-
-    -   No additional setup is required for the Yahoo Finance API.
+4. Set up Yahoo Finance API:
+   - No additional setup is required for the Yahoo Finance API.
 
 ## Usage
 
-1.  **Data Collection**:
-    -   Run the script to fetch tweets and stock prices:
+1. **Data Collection**:
+   - Run the script to fetch tweets and stock prices:
+     ```bash
+     python fetch_data.py
+     ```
 
-        ``` bash
-        python fetch_data.py
-        ```
-2.  **Training the Model**:
-    -   Train the model using historical stock and sentiment data:
+2. **Training the Model**:
+   - Train the model using historical stock and sentiment data:
+     ```bash
+     python train_model.py
+     ```
 
-        ``` bash
-        python train_model.py
-        ```
-3.  **Prediction**:
-    -   Use the trained model to predict future stock prices:
+3. **Prediction**:
+   - Use the trained model to predict future stock prices:
+     ```bash
+     python predict.py
+     ```
 
-        ``` bash
-        python predict.py
-        ```
-4.  **Visualization**:
-    -   Visualize the stock price trends and sentiment over time:
-
-        ``` bash
-        python visualize.py
-        ```
+4. **Visualization**:
+   - Visualize the stock price trends and sentiment over time:
+     ```bash
+     python visualize.py
+     ```
 
 ## Results
 
--   The project demonstrates the correlation between public sentiment
-    and stock price fluctuations.
--   The prediction accuracy improves over time with more data.
--   Sample visualizations and prediction results can be found in the
-    `results/` folder.
+- The project demonstrates the correlation between public sentiment and stock price fluctuations.
+- The prediction accuracy improves over time with more data.
+- Sample visualizations and prediction results can be found in the `results/` folder.
 
 ## Contributing
 
 Contributions are welcome! To contribute:
 
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature-branch`).
-3.  Commit your changes (`git commit -m 'Add new feature'`).
-4.  Push to the branch (`git push origin feature-branch`).
-5.  Open a pull request.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the
-[LICENSE](LICENSE) file for details. \`\`\`
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
 
 ### How to Use:
-
-1.  Update the "Results" section with actual project results if
-    available.
-2.  Ensure you create the `requirements.txt` file to list all
-    dependencies.
-3.  Replace placeholders like API keys in the Installation section with
-    actual instructions or links to help users set them up.
+1. Update the "Results" section with actual project results if available.
+2. Ensure you create the `requirements.txt` file to list all dependencies.
+3. Replace placeholders like API keys in the Installation section with actual instructions or links to help users set them up. 
 
 Let me know if you need any changes!
